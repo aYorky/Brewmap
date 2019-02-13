@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- you can use any color you want I used here gray color-->
+    <solid android:color="#F0BB29"/>
+
+    <corners android:radius="0dp"/>
+
+    <!-- <corners
+         android:bottomRightRadius="0dp"
+         android:bottomLeftRadius="3dp"
+         android:topLeftRadius="3dp"
+         android:topRightRadius="3dp"/>-->
+ </shape>
+
