@@ -4,7 +4,7 @@ import java.security.PublicKey;
 
 public class Constants {
 
-    public  static final String DB_URL = "https://spewyr.000webhostapp.com/connect/";
+    public static final String DB_URL = "https://spewyr.000webhostapp.com/connect/";
 
     public static final String REGISTER_URL = DB_URL + "register.php";
     public static final String LOGIN_URL =  DB_URL + "login.php";
