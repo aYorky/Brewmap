@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -104,6 +105,13 @@ protected void onCreate(Bundle savedInstanceState) {
                             
                             @Override
                             public void onResponse(String response) {
+                                if(response.contains("Please check your email.") || response.contains("Email already in use.")) {
+                                    /** This section is having issues. I believe it has something to do with
+                                     * the fact that we're using activities instead of fragments. It might
+                                     * be worth it to convert everything to fragments within a login activity.*/
+                                    /*final FragmentManager fm = getActivity().getSupportFragmentManager();
+                                    fm.beginTransaction().replace(R.id.content, new LoginFragment()).commit();*/
+                                }
                                 Toast.makeText(RegisterActivity.this, response.trim(), Toast.LENGTH_SHORT).show();
                             }
                             
