@@ -11,27 +11,38 @@ public class register extends AppCompatActivity {
     /* activity_register fields and button variables  */
 
     //First and Last names
-    final EditText firstNameEditText = (EditText) findViewById(R.id.FirstNameEditText);
-    final EditText lastNameEditText = (EditText) findViewById(R.id.LastNameEditText);
+    final EditText firstNameEditText = findViewById(R.id.FirstNameEditText);
+    final EditText lastNameEditText =  findViewById(R.id.LastNameEditText);
 
     //Username
-    final EditText usernameEditText = (EditText) findViewById(R.id.UsernameEditText);
+    final EditText usernameEditText =  findViewById(R.id.UsernameEditText);
 
     //Password
-    final EditText passwordEditText = (EditText) findViewById(R.id.PasswordEditText);
+    final EditText passwordEditText = findViewById(R.id.PasswordEditText);
 
     //Email
-    final EditText emailEditText = (EditText) findViewById(R.id.EmailEditText);
+    final EditText emailEditText =  findViewById(R.id.EmailEditText);
 
     //Register button
     final Button registerButton = findViewById(R.id.RegisterButton);
 
     //confirmations
-    final EditText passwordVerEditText = (EditText) findViewById(R.id.PasswordVerEditText);
-    final EditText emailVerEditText = (EditText) findViewById(R.id.EmailVerEditText);
+    final EditText passwordVerEditText = findViewById(R.id.PasswordVerEditText);
+    final EditText emailVerEditText = findViewById(R.id.EmailVerEditText);
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_activity);
+
+        final String first_name = firstNameEditText.getText().toString().trim();
+        final String last_name = lastNameEditText.getText().toString().trim();
+        final String username = usernameEditText.getText().toString().trim();
+        final String email = emailEditText.getText().toString().trim();
+        final String password = passwordEditText.getText().toString().trim();
+
+        final String passwordVer = passwordVerEditText.getText().toString().trim();
+        final String emailVer = emailVerEditText.getText().toString().trim();
+
+        
     }
 }
