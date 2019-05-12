@@ -62,12 +62,6 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-
-
-
-
-
-
 /**
  * Demonstrates how to create and remove geofences using the GeofencingApi. Uses an IntentService
  * to monitor geofence transitions and creates notifications whenever a device enters or exits
