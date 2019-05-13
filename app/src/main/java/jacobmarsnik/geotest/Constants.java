@@ -45,7 +45,7 @@ final class Constants {
     static final String GEOFENCES_ADDED_KEY = PACKAGE_NAME + ".GEOFENCES_ADDED_KEY";
 
 
-    static  final int GEOFENCE_RADIUS_IN_METERS = 50;
+    static  final int GEOFENCE_RADIUS_IN_METERS = 100;
 
     /**
      * Used to set an expiration time for a geofence. After this amount of time Location Services
@@ -82,7 +82,7 @@ final class Constants {
 
         S.put("South Hall", new LatLng(44.853484, -92.6233754));
 
-        S.put("Apt8", new LatLng(40.741895, -73.989308));
+        S.put("Apt8", new LatLng(44.8516042, -92.6099064));
 
     }
 }

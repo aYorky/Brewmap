@@ -359,8 +359,7 @@ public class MainActivity extends AppCompatActivity implements OnCompleteListene
             updateGeofencesAdded(!getGeofencesAdded());
             setButtonsEnabledState();
 
-            int messageId = getGeofencesAdded() ? R.string.geofences_added :
-                    R.string.geofences_removed;
+            int messageId = getGeofencesAdded() ? R.string.geofences_added : R.string.geofences_removed;
             Toast.makeText(this, getString(messageId), Toast.LENGTH_SHORT).show();
         } else {
             // Get the status code for the error and log it using a user-friendly message.
