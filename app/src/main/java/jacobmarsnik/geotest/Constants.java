@@ -45,7 +45,7 @@ final class Constants {
     static final String GEOFENCES_ADDED_KEY = PACKAGE_NAME + ".GEOFENCES_ADDED_KEY";
 
 
-    static  final int GEOFENCE_RADIUS_IN_METERS = 100;
+    static  final int GEOFENCE_RADIUS_IN_METERS = 75;
 
     /**
      * Used to set an expiration time for a geofence. After this amount of time Location Services
