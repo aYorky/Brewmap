@@ -63,22 +63,26 @@ final class Constants {
     /**
      * Map for storing information about airports in the San Francisco bay area.
      */
-    static final HashMap<String, LatLng> BAY_AREA_LANDMARKS = new HashMap<>();
+    static final HashMap<String, LatLng> S = new HashMap<>();
 
     static {
         // San Francisco International Airport.
-        BAY_AREA_LANDMARKS.put("SFO", new LatLng(44.848931, -92.624509));
+        S.put("SFO", new LatLng(44.848931, -92.624509));
 
         // Googleplex.
-        BAY_AREA_LANDMARKS.put("GOOGLE", new LatLng(37.422611,-122.0840577));
+        S.put("GOOGLE", new LatLng(37.422611,-122.0840577));
 
-        BAY_AREA_LANDMARKS.put("Library", new LatLng(44.852954, -92.623018));
+        S.put("Library", new LatLng(44.852954, -92.623018));
 
-        BAY_AREA_LANDMARKS.put("Home", new LatLng(44.849036, -92.624522));
+        S.put("Home", new LatLng(44.849036, -92.624522));
 
-        BAY_AREA_LANDMARKS.put("cassie's house", new LatLng(44.845154, -92.631958));
+        S.put("cassie's house", new LatLng(44.845154, -92.631958));
 
-        BAY_AREA_LANDMARKS.put("Ames", new LatLng(44.8516291,-92.6148443 ));
+        S.put("Ames", new LatLng(44.8516291,-92.6148443 ));
+
+        S.put("South Hall", new LatLng(44.853484, -92.6233754));
+
+        S.put("Apt8", new LatLng(40.741895, -73.989308));
 
     }
 }
